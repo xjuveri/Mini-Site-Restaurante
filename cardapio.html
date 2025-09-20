@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url("img/JacksonHole.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.226); 
+    background-blend-mode: lighten;        
+    }
+
+    .nav-box {
+    background-color: #efdac5;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px 0 10px 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .nav-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;             
+    align-items: center;
+    }
+    .nav-box li { font-weight: bold; color: #000; } 
+    .nav-box a,
+    .nav-box a:visited {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    .nav-box a:hover,
+    .nav-box a:focus {
+    color: #b22222;        
+    transition: color .2s ease;
+    }
+
+    h2 {
+    text-align: center;
+    color: #000;
+    margin: 8px 0 10px;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+    }
+
+    table {
+    width: 80%;
+    margin: 0 auto 24px;
+    border-collapse: collapse;
+    background-color: #efdac5;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    thead th {
+    background-color: #b22222;
+    color: #fff;
+    }
+    th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    }
+    tbody tr:hover { background-color: #f5f5f5; }
+
+    .chef-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;       
+    max-width: 800px;        
+    }
+    .chef-box {
+    background-color: #efdac5;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .chef-box h3 { margin: 0 0 8px; }
+    .chef-box ol { margin: 0; padding-left: 20px; }
+    .chef-box li { margin-bottom: 6px; font-weight: 500; color: #000; }
+
+    .chef-images{
+    display: flex;
+    flex-direction: row;   
+    gap: 10px;
+    }
+    .chef-images img{
+    width: 135px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+
+<body>
+<nav class="nav-box">
+  <ul>
+    <li><a href="index.html">Página inicial</a></li>
+    <li>|</li>
+    <li><a href="contato.html">Entre em contato</a></li>
+    <li>|</li>
+    <li>
+      <a href="https://autoreserve.com/en/restaurants/gXvfzMHQc1VqsGQK9g8N" target="_blank">
+        Faça sua reserva aqui
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <h2>Cardápio</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Prato</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jackson Burger</td>
+        <td>Nosso hambúrguer exclusivo com um molho especial de carne</td>
+        <td>R$ 34,00</td>
+      </tr>
+      <tr>
+        <td>Jackson Hot Dog</td>
+        <td>Um hot dog recheado com queijo, grelhado e coberto molho especial</td>
+        <td>R$ 32,50</td>
+      </tr>
+      <tr>
+        <td>Grelhado de Cogumelos</td>
+        <td>Um prato no estilo fondue, com uma variedade de cogumelos e frango</td>
+        <td>R$ 40,00</td>
+      </tr>
+      <tr>
+        <td>Tuna e Avocado</td>
+        <td>Servido com torradas crocantes, aproveite esse prato de atum e abacate</td>
+        <td>R$ 27,50</td>
+      </tr>
+      <tr>
+        <td>Cerveja Artesanal</td>
+        <td>Cerveja artesanal, feita na casa</td>
+        <td>R$ 16,00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="chef-container">
+    <div class="chef-box">
+      <h3>Sugestões do Chef:</h3>
+      <ol>
+        <li>O Jackson Burger;</li>
+        <li>O Grelhado de Cogumelos;</li>
+        <li>O Jackson Hot Dog.</li>
+      </ol>
+    </div>
+
+    <div class="chef-images">
+      <img src="img/burger.png" alt="Burger artesanal">
+      <img src="img/fishandchips.png" alt="Peixe frito com batata frita">
+    </div>
+  </div>
+
+</body>
+</html>
